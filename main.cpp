@@ -283,7 +283,7 @@ void Optimizer_TheGameGrid (int GridBlocks[50],int PotGrid[100][100][2],int IzmV
 
         // Rotation between PotGrids
         // THE VALUE OF (Cur_Check==3) DETERMINATES HOW MANY INSTANCES YOU ALLOW THE OPTIMIZER TO REMEBER.
-        if(Cur_Check==5)
+        if(Cur_Check==10)
         {
             Cur_Check = 0;
         } else {
@@ -514,7 +514,7 @@ void Optimizer_TheGameGrid (int GridBlocks[50],int PotGrid[100][100][2],int IzmV
         }
         Current_Best_CFunction++;
 
-    }while(IzmVert[Cur_Check] != 0); // Currently will keep trying to optimize till it finds a grid with a costFunction of 0.
+    }while(IzmVert[Cur_Check] != 0 && (Current_Best_CFunction < 100000000 && IzmVert[Cur_Check] > 2)); // Currently will keep trying to optimize till it finds a grid with a costFunction of 0.
     //cout << "We exited the do/while!" << endl;
 }
 
