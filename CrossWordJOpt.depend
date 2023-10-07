@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1696704115 source:d:\studijas\5 semestris (m)\optimizacija\crosswordjopt\main.cpp
+	<iostream>
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1696708815 source:d:\studijas\5 semestris (m)\optimizacija\crosswordjopt v1.2\main.cpp
+	<iostream>
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
